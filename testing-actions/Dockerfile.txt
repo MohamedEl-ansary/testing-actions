@@ -1,0 +1,9 @@
+FROM openjdk
+
+WORKDIR /test
+
+COPY testing-action.java /test
+
+RUN javac testing-action.java
+
+CMD java testing-action
